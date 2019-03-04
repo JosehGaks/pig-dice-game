@@ -54,6 +54,7 @@ function switchPlayer () {
 
   }
 }
+
 function resetGame() {
   pigGame.player1Score = 0;
   pigGame.player2Score = 0;
