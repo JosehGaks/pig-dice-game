@@ -10,10 +10,10 @@ Pig is a simple dice game which in its basic form is playable with just a single
   cd index.html
   ```
 
-##known Bugs
+## known Bugs
 No known bugs for the moment.
 
-#BDD
+## BDD
 _____________________________________________________________________________________________________________________________________________________________________________________
 | Behavior                                                                             | input                                  | output                                            |
 |--------------------------------------------------------------------------------------|:--------------------------------------:|:-------------------------------------------------:|
@@ -21,13 +21,13 @@ ________________________________________________________________________________
 |If Player rolls any number other than 1, that roll is added to the turnscore          |Roll = 2                                |turnscore = 2                                      |
 | If Player 1 rolls a 1, no score is added and round for Player 1 ends                 | Roll = 1                               |turn total = 2 / Total score = 2 / Player 2 begins |
 |When a player's total score reaches 100 or more, game ends and winner page shows      |Player 1 total score = 100              |alert winner                                       |                |______________________________________________________________________________________|_________________________________________|__________________________________________________| 
-##Technologies used
+
+
+## Technologies used
     javascript
     html
     jquery
     css
-
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
