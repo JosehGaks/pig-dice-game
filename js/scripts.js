@@ -31,7 +31,6 @@ var playerRoll = function() {
   }
   return roll;
 }
-
 function holdThePig() {
   var currentPlayer = pigGame.playerUp;
   if (currentPlayer ===1) {
