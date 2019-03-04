@@ -1,0 +1,67 @@
+body{
+  font-family: 'Srisakdi', cursive;
+  font-weight: bolder,
+}
+#player2{
+  float: right;
+}
+a{
+  font-size: 100px;
+  text-decoration: none;
+}
+#p1{
+   color:#9C100A;
+
+}
+#p2{
+   color: #0A9C8B;
+
+}
+.status{
+  height: 200px;
+  width: 200px;
+  background-color: #9C100A;
+  border-radius: 8px;
+  justify-content:center; 
+  text-align: center;
+  color: aliceblue;
+}
+.status2{
+  height: 200px;
+  width: 200px;
+   background-color: #0A9C8B;
+  border-radius: 8px;
+  justify-content:center; 
+  text-align: center;
+  color: aliceblue;
+}
+#dice-1{
+  height: 20%;
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+#game{
+  height: 100px;
+  width: 100px; 
+  background-color: grey; 
+}
+.turn{
+
+  height: 50px;
+  width: 200px;
+   background-color: rgb(14, 14, 12);
+  border-radius: 8px;
+  justify-content:center; 
+  text-align: center;
+  color: aliceblue;
+}
+.roll{
+  height: 50px;
+  width: 200px;
+   background-color: gray;
+  border-radius: 8px;
+  justify-content:center; 
+  text-align: center;
+  color: aliceblue;
+}
