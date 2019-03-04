@@ -30,7 +30,7 @@ var playerRoll = function() {
   }
   }
   return roll;
-  
+
 }
 function holdThePig() {
   var currentPlayer = pigGame.playerUp;
@@ -83,9 +83,8 @@ $(document).ready(function() {
     
     $(".rollResult").text(pigResult);
     $(".turnScore").text(pigGame.turnScore);
-
-  });
-
+ });
+ 
   $(".holdPig").click(function(){
     holdThePig();
     $("rollResult").text("");
