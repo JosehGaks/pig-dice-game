@@ -1,24 +1,17 @@
 # piggame
 
 Pig is a simple dice game which in its basic form is playable with just a single die. You win by being the first player to score 100 or more points.
+####BY **Joseph Gakunga**
 
 ## Installation
+  ```cmd
+  cd pig-dice
+  cd index.html
+  ```
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+##Bugs
+No known bugs for the moment.
 
-```bash
-pip install foobar
-```
-
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
 #bdd
 | Behavior                                                                             | input                                  | output                                            |
 | -------------------------------------------------------------------------------------|:--------------------------------------:|--------------------------------------------------:|
@@ -49,4 +42,4 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-](https://choosealicense.com/licenses/mit/)
+]
