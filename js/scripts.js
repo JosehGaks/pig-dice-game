@@ -1,5 +1,5 @@
 
-// BUSINESS LOGIC 
+// BUSINESS LOGIC
 var pigGame = {
   player1Score: 0,
   player2Score: 0,
@@ -10,6 +10,18 @@ var pigGame = {
 function dieRoll () {
   die1 = Math.floor(Math.random()*6) +1;
   return die1;
+}
+
+
+function holdThePig() {
+  var currentPlayer = pigGame.playerUp;
+  if (currentPlayer ===1) {
+    pigGame.player1Score += pigGame.turnScore;
+  } else {
+    pigGame.player2Score += pigGame.turnScore;
+  }
+  pigGame.turnScore = 0;
+  switchPlayer();
 }
 
 var playerRoll = function() {
@@ -32,16 +44,6 @@ var playerRoll = function() {
   return roll;
 
 }
-function holdThePig() {
-  var currentPlayer = pigGame.playerUp;
-  if (currentPlayer ===1) {
-    pigGame.player1Score += pigGame.turnScore;
-  } else {
-    pigGame.player2Score += pigGame.turnScore;
-  }
-  pigGame.turnScore = 0;
-  switchPlayer();
-}
 function switchPlayer () {
   if (pigGame.playerUp === 1) {
     $("#player1Button").hide();
@@ -54,6 +56,7 @@ function switchPlayer () {
     pigGame.playerUp = 1;
 
   }
+
 }
 
 function resetGame() {
@@ -64,7 +67,7 @@ function resetGame() {
 }
 
 
-// USER LOGIC 
+// USER LOGIC
 
 function alertEndTurn(){
   alert("ooops :( .....\n..you rolled a\n....... 1.....\n...SO you score a 0");
@@ -80,7 +83,7 @@ function alertWinner(playerNumber) {
 $(document).ready(function() {
  $(".rollPig").click(function() {
     pigResult = playerRoll();
-    
+
     $(".rollResult").text(pigResult);
     $(".turnScore").text(pigGame.turnScore);
  });
