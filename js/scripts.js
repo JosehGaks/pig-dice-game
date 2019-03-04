@@ -41,8 +41,6 @@ function holdThePig() {
   pigGame.turnScore = 0;
   switchPlayer();
 }
-
-
 function switchPlayer () {
   if (pigGame.playerUp === 1) {
     $("#player1Button").hide();
