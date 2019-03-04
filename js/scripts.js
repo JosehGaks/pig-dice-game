@@ -84,7 +84,7 @@ $(document).ready(function() {
     $(".rollResult").text(pigResult);
     $(".turnScore").text(pigGame.turnScore);
  });
- 
+
   $(".holdPig").click(function(){
     holdThePig();
     $("rollResult").text("");
