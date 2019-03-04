@@ -63,7 +63,6 @@ function resetGame() {
 
 // USER LOGIC 
 
-
 function alertEndTurn(){
   alert("ooops :( .....\n..you rolled a\n....... 1.....\n...SO you score a 0");
   $(".playerStatus").text(pigGame.playerUp);
