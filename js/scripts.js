@@ -11,7 +11,6 @@ function dieRoll () {
   die1 = Math.floor(Math.random()*6) +1;
   return die1;
 }
-
 var playerRoll = function() {
   var roll = dieRoll();
   document.getElementById('dice-1').src='images/dice-'+roll+'.png';
