@@ -76,19 +76,12 @@ function alertEndTurn(){
 
 function alertWinner(playerNumber) {
   alert("Player " + playerNumber + "WINS");
-
+  resetGame();
   $(".gameStatusDisplay").text(0);
 }
 
 $(document).ready(function() {
-   
-  $("#newgame").click(function() {
-    resetGame();
-  });
-
-
-
-  $(".rollPig").click(function() {
+ $(".rollPig").click(function() {
     pigResult = playerRoll();
     
     $(".rollResult").text(pigResult);
