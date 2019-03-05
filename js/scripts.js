@@ -38,7 +38,7 @@ let playerRoll = function() {
       }
     } else if (rollDice.turnScore + rollDice.player2Score >= 100) {
       alertWinner(2);
-  }
+    }
   }
   return roll;
 
@@ -80,11 +80,11 @@ function alertWinner(playerNumber) {
 }
 
 $(document).ready(function() {
- $(".rollPig").click(function() {
+  $(".rollPig").click(function() {
     pigResult = playerRoll();
     $(".rollResult").text(pigResult);
     $(".turnScore").text(rollDice.turnScore);
- });
+  });
 
   $(".holdPig").click(function(){
     holdThePig();
