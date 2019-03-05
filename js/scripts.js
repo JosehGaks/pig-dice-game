@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 // BUSINESS LOGIC
 let rollDice = {
+=======
+
+// BUSINESS LOGIC
+var pigGame = {
+>>>>>>> bcd2bc059424be24a65b5b6151c35b0154690170
   player1Score: 0,
   player2Score: 0,
   playerUp: 1,
@@ -13,6 +19,7 @@ function diceRoll () {
 
 
 function holdThePig() {
+<<<<<<< HEAD
   let currentPlayer = rollDice.playerUp;
   if (currentPlayer ===1) {
     rollDice.player1Score += rollDice.turnScore;
@@ -25,6 +32,20 @@ function holdThePig() {
 
 let playerRoll = function() {
   let roll = diceRoll();
+=======
+  var currentPlayer = pigGame.playerUp;
+  if (currentPlayer ===1) {
+    pigGame.player1Score += pigGame.turnScore;
+  } else {
+    pigGame.player2Score += pigGame.turnScore;
+  }
+  pigGame.turnScore = 0;
+  switchPlayer();
+}
+
+var playerRoll = function() {
+  var roll = dieRoll();
+>>>>>>> bcd2bc059424be24a65b5b6151c35b0154690170
   document.getElementById('dice-1').src='images/dice-'+roll+'.png';
   if(roll ===1){
     rollDice.turnScore = 0;
@@ -82,6 +103,10 @@ function alertWinner(playerNumber) {
 $(document).ready(function() {
   $(".rollPig").click(function() {
     pigResult = playerRoll();
+<<<<<<< HEAD
+=======
+
+>>>>>>> bcd2bc059424be24a65b5b6151c35b0154690170
     $(".rollResult").text(pigResult);
     $(".turnScore").text(rollDice.turnScore);
   });
